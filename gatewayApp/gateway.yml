@@ -1,5 +1,0 @@
-zuul:
-  routes:
-    userservices:
-      path: /v1/enroll
-      service-id: userdetail
