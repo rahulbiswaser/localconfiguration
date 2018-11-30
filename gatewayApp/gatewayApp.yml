@@ -2,6 +2,9 @@ zuul:
   routes:
     userservices:
       path: /v1/enroll
+      service-id: userdetail
+    loginservices:
+      path: /v1/login
       service-id: userdetail	  
 userdetail:
   Ribbon:
