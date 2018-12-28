@@ -5,8 +5,17 @@ zuul:
       service-id: userdetail
     loginservices:
       path: /v1/login
-      service-id: userdetail	  
+      service-id: userdetail    
+    cryptoservices:
+      path: /v1/encrypt
+      service-id: CRYPTO    
+    Decryptoservices:
+      path: /v1/decrypt
+      service-id: CRYPTO	  
 userdetail:
+  Ribbon:
+    ConnectionTimeout: 2000
+CRYPTO:
   Ribbon:
     ConnectionTimeout: 2000	
  
